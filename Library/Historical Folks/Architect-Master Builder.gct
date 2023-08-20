@@ -1,0 +1,2048 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "bd052739-133d-4d85-9e70-6b63ac00959e",
+	"traits": [
+		{
+			"id": "aae5ddb6-2cce-491f-bcca-51ad05a79637",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "9c13347f-da5b-4e0b-bc93-41e2cdec267b",
+					"type": "trait_container",
+					"open": true,
+					"name": "Attributes",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "bcd77281-cae7-4216-87ef-d1954e7684f1",
+					"type": "trait_container",
+					"children": [
+						{
+							"id": "41d45736-c293-4e97-a11b-9a5193f7c0ff",
+							"type": "trait",
+							"name": "Comfortable Wealth",
+							"reference": "B25",
+							"notes": "Starting wealth is twice normal",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Wealth"
+							],
+							"base_points": 10,
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "94aba40c-09f6-4c24-909b-e469add66177",
+							"type": "trait",
+							"name": "High Status",
+							"reference": "B28",
+							"notes": "@Description@",
+							"tags": [
+								"Advantage",
+								"Social"
+							],
+							"levels": 1,
+							"points_per_level": 5,
+							"can_level": true,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "4671e3bd-bd53-4a38-8b87-6e66d1971888",
+							"type": "trait_container",
+							"open": true,
+							"children": [
+								{
+									"id": "0841afba-2010-4efc-9110-2ed7700d514b",
+									"type": "trait",
+									"name": "Increased Intelligence",
+									"reference": "B15",
+									"tags": [
+										"Advantage",
+										"Attribute",
+										"Mental"
+									],
+									"levels": 1,
+									"points_per_level": 20,
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"attribute": "iq",
+											"amount": 1,
+											"per_level": true
+										}
+									],
+									"can_level": true,
+									"calc": {
+										"points": 20
+									}
+								},
+								{
+									"id": "8ca06322-68ec-4413-a05e-19158fe12e49",
+									"type": "trait",
+									"name": "Talent (Artificer)",
+									"reference": "B90",
+									"tags": [
+										"Advantage",
+										"Mental",
+										"Talent"
+									],
+									"levels": 1,
+									"points_per_level": 10,
+									"features": [
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "armoury"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Carpentry"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Electrician"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Electronics Repair"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Engineer"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Machinist"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Masonry"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Mechanic"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Smith"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "reaction_bonus",
+											"situation": "from any employer",
+											"amount": 1,
+											"per_level": true
+										}
+									],
+									"can_level": true,
+									"calc": {
+										"points": 10
+									}
+								},
+								{
+									"id": "8fa36afb-0372-4688-9d2e-d0b03a44475d",
+									"type": "trait",
+									"name": "Talent (Business Acumen)",
+									"reference": "B90",
+									"tags": [
+										"Advantage",
+										"Mental",
+										"Talent"
+									],
+									"levels": 1,
+									"points_per_level": 10,
+									"features": [
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Accounting"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Administration"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Economics"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Finance"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Gambling"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Market Analysis"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Merchant"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Propaganda"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "reaction_bonus",
+											"situation": "from business partners",
+											"amount": 1,
+											"per_level": true
+										}
+									],
+									"can_level": true,
+									"calc": {
+										"points": 10
+									}
+								},
+								{
+									"id": "5e58c247-e5de-4bc3-8dd7-9ba21f3f53d1",
+									"type": "trait",
+									"name": "Talent (Gifted Artist)",
+									"reference": "B90,PU3:10",
+									"tags": [
+										"Advantage",
+										"Mental",
+										"Talent"
+									],
+									"levels": 1,
+									"points_per_level": 5,
+									"features": [
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Artist"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Jeweler"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Leatherworking"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Photography"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Sewing"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "reaction_bonus",
+											"situation": "from buyers and critics",
+											"amount": 1,
+											"per_level": true
+										}
+									],
+									"can_level": true,
+									"calc": {
+										"points": 5
+									}
+								},
+								{
+									"id": "0da4bf02-a4dd-44fa-a585-205ece3f767e",
+									"type": "trait",
+									"name": "Talent (Master Builder)",
+									"reference": "F132,PU3:11",
+									"tags": [
+										"Advantage",
+										"Mental",
+										"Talent"
+									],
+									"modifiers": [
+										{
+											"id": "07218b9a-624a-48de-90e2-c33498afe82f",
+											"type": "modifier",
+											"name": "Reaction Bonus",
+											"notes": "Workers on projects, prospective employers"
+										},
+										{
+											"id": "d6f38780-ff75-4f5d-9c9e-bf40b53ad66e",
+											"type": "modifier",
+											"name": "Alternate Benefit",
+											"notes": "Bonus to avoid common workplace hazards, even if used as traps",
+											"disabled": true
+										}
+									],
+									"levels": 1,
+									"points_per_level": 5,
+									"features": [
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Architecture"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Carpentry"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Engineer"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Forced Entry"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Masonry"
+											},
+											"amount": 1,
+											"per_level": true
+										}
+									],
+									"can_level": true,
+									"calc": {
+										"points": 5
+									}
+								},
+								{
+									"id": "c83fb11b-ebcc-4224-ab11-58077177edde",
+									"type": "trait",
+									"name": "Talent (Mathematical Ability)",
+									"reference": "B90,PU3:12",
+									"tags": [
+										"Advantage",
+										"Mental",
+										"Talent"
+									],
+									"modifiers": [
+										{
+											"id": "057f8673-2216-4f21-a752-a300a6883620",
+											"type": "modifier",
+											"name": "Alternate Benefit",
+											"notes": "Bonus to resist deception involving numbers",
+											"disabled": true
+										},
+										{
+											"id": "b2a013b0-2273-4c91-8dfa-50a3b5fa2715",
+											"type": "modifier",
+											"name": "Alternative Cost",
+											"cost": -2,
+											"affects": "levels_only",
+											"cost_type": "points",
+											"disabled": true
+										}
+									],
+									"levels": 1,
+									"points_per_level": 10,
+									"features": [
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Accounting"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Astronomy"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Cryptography"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Engineer"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Finance"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Market Analysis"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Mathematics"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Physics"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "reaction_bonus",
+											"situation": "from engineers and scientists",
+											"amount": 1,
+											"per_level": true
+										}
+									],
+									"can_level": true,
+									"calc": {
+										"points": 10
+									}
+								},
+								{
+									"id": "fe7f3aed-3a88-4fa2-8d13-8ab2926ec8e6",
+									"type": "trait",
+									"name": "Good Reputation",
+									"reference": "B26,MA54",
+									"tags": [
+										"Advantage",
+										"Social"
+									],
+									"modifiers": [
+										{
+											"id": "38aa3113-4709-485c-be35-ba35d96192fd",
+											"type": "modifier",
+											"name": "People Affected",
+											"reference": "B27",
+											"notes": "Almost everyone",
+											"cost": 1,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "39082380-367d-4319-9daf-854976f45562",
+											"type": "modifier",
+											"name": "People Affected",
+											"reference": "B27",
+											"notes": "Almost everyone except @large class of people@",
+											"cost": 0.67,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "b43f0211-b5bf-4271-b6cc-acd6483af8d2",
+											"type": "modifier",
+											"name": "People Affected",
+											"reference": "B27",
+											"notes": "@Large class of people@",
+											"cost": 0.5,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "ca59a34a-2467-417f-9764-46e7617201a2",
+											"type": "modifier",
+											"name": "People Affected",
+											"reference": "B27",
+											"notes": "@Small class of people@",
+											"cost": 0.33,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "bf87af2b-67fd-43ca-b53d-22911e628cfe",
+											"type": "modifier",
+											"name": "Recognized all the time",
+											"reference": "B28",
+											"cost": 1,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "a0d8d318-d895-4cd6-9412-3b4839438dbe",
+											"type": "modifier",
+											"name": "Recognized sometimes",
+											"reference": "B28",
+											"notes": "10-",
+											"cost": 0.5,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "c32da9c0-87ba-4504-b87d-7ae275bec1ce",
+											"type": "modifier",
+											"name": "Recognized occasionally",
+											"reference": "B28",
+											"notes": "7-",
+											"cost": 0.33,
+											"cost_type": "multiplier",
+											"disabled": true
+										}
+									],
+									"levels": 1,
+									"points_per_level": 5,
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from others aware of your reputation",
+											"amount": 1,
+											"per_level": true
+										}
+									],
+									"round_down": true,
+									"can_level": true,
+									"calc": {
+										"points": 5
+									}
+								},
+								{
+									"id": "880c1e1e-6073-45a5-aec2-75c181a00563",
+									"type": "trait",
+									"name": "High Status",
+									"reference": "B28",
+									"notes": "@Description@",
+									"tags": [
+										"Advantage",
+										"Social"
+									],
+									"levels": 1,
+									"points_per_level": 5,
+									"can_level": true,
+									"calc": {
+										"points": 5
+									}
+								},
+								{
+									"id": "f6adbc8f-0752-4510-af79-4559a0ee24e1",
+									"type": "trait",
+									"name": "Versatile",
+									"reference": "B96",
+									"tags": [
+										"Advantage",
+										"Mental"
+									],
+									"base_points": 5,
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "on any task that requires creativity or invention, including most rolls against Artist skill and all Engineer rolls for new inventions",
+											"amount": 1
+										}
+									],
+									"calc": {
+										"points": 5
+									}
+								},
+								{
+									"id": "ccad6766-4ad4-442e-aa1a-b5a72d99cf87",
+									"type": "trait",
+									"name": "Wealth",
+									"reference": "B25",
+									"tags": [
+										"Advantage",
+										"Disadvantage",
+										"Social"
+									],
+									"modifiers": [
+										{
+											"id": "7a8da23e-2e81-49bf-ae75-5a6e7dc73904",
+											"type": "modifier",
+											"name": "Dead Broke",
+											"reference": "B25",
+											"notes": "Starting wealth is $0",
+											"cost": -25,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "ab963cc1-1858-49fb-b9d4-13556cb8fa10",
+											"type": "modifier",
+											"name": "Poor",
+											"reference": "B25",
+											"notes": "Starting wealth is 1/5 average",
+											"cost": -15,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "e7e1667e-2ef0-402a-9624-3c3c5bd8623b",
+											"type": "modifier",
+											"name": "Struggling",
+											"reference": "B25",
+											"notes": "Starting wealth is 1/2 average",
+											"cost": -10,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "bc11b24b-7076-454c-a326-9ed504c3fb88",
+											"type": "modifier",
+											"name": "Average",
+											"reference": "B25",
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "94963088-321e-4bdd-9702-69d463648f45",
+											"type": "modifier",
+											"name": "Comfortable",
+											"reference": "B25",
+											"notes": "Starting wealth is 2x average",
+											"cost": 10,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "1eebecfe-9917-4eea-a243-50a12b2a65f8",
+											"type": "modifier",
+											"name": "Wealthy",
+											"reference": "B25",
+											"notes": "Starting wealth is 5x average",
+											"cost": 20,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "4e79f009-37f6-453d-ba45-d10eb53c2f06",
+											"type": "modifier",
+											"name": "Very Wealthy",
+											"reference": "B25",
+											"notes": "Starting wealth is 20x average",
+											"cost": 30,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "1b0a990f-16c2-4796-9361-c81ea44ca994",
+											"type": "modifier",
+											"name": "Filthy Rich",
+											"reference": "B25",
+											"notes": "Starting wealth is 100x average",
+											"cost": 50,
+											"cost_type": "points",
+											"disabled": true
+										}
+									],
+									"calc": {
+										"points": 0
+									}
+								}
+							],
+							"name": "35 Points Chosen From:",
+							"calc": {
+								"points": 75
+							}
+						}
+					],
+					"name": "Class Advantages",
+					"calc": {
+						"points": 90
+					}
+				},
+				{
+					"id": "e810d4fa-7c43-4604-9804-be6e685107b0",
+					"type": "trait_container",
+					"children": [
+						{
+							"id": "9e442ab6-edf8-4d11-ac3a-85a044df6947",
+							"type": "trait_container",
+							"children": [
+								{
+									"id": "b2ceb301-876c-47cd-9c34-05bbf5c08a88",
+									"type": "trait",
+									"name": "Bad Back",
+									"reference": "B123",
+									"notes": "Throw out your back whenever you make a ST roll, and whenever you roll 17 or 18 on an attack or defense roll in melee combat, or on a roll for an “athletic” skill such as Acrobatics, make a HT roll as well",
+									"tags": [
+										"Disadvantage",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "42d07232-2402-4a80-909e-47679015ba3a",
+											"type": "modifier",
+											"name": "Severe",
+											"reference": "B123",
+											"notes": "The HT roll is at -2",
+											"cost": -10,
+											"cost_type": "points",
+											"disabled": true
+										}
+									],
+									"base_points": -15,
+									"calc": {
+										"points": -15
+									}
+								},
+								{
+									"id": "e256504a-c87c-4598-b978-c94ff638fa5f",
+									"type": "trait",
+									"name": "Bad Sight (Farsighted)",
+									"reference": "B123",
+									"tags": [
+										"Disadvantage",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "5f9a7d75-de73-40c4-bbc9-f8f6a058a9ba",
+											"type": "modifier",
+											"name": "Mitigator",
+											"notes": "Glasses",
+											"cost": -60,
+											"disabled": true
+										}
+									],
+									"base_points": -25,
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "to Vision rolls to spot items within 1 yd",
+											"amount": -6
+										},
+										{
+											"type": "conditional_modifier",
+											"situation": "to DX for any close manual task, including close combat",
+											"amount": -3
+										}
+									],
+									"calc": {
+										"points": -25
+									}
+								},
+								{
+									"id": "7ca887df-d4f0-4a13-b8c1-4159662a43c9",
+									"type": "trait",
+									"name": "Bad Sight (Nearsighted)",
+									"reference": "B123",
+									"notes": "Double actual distance to the target when calculating the range modifier for ranged attacks",
+									"tags": [
+										"Disadvantage",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "bcf5ee4d-8f70-41e5-81ee-9f4a2956f9c3",
+											"type": "modifier",
+											"name": "Mitigator",
+											"notes": "Glasses",
+											"cost": -60,
+											"disabled": true
+										}
+									],
+									"base_points": -25,
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "to Vision rolls to spot items more than 1 yd away",
+											"amount": -6
+										},
+										{
+											"type": "conditional_modifier",
+											"situation": "to all melee attacks",
+											"amount": -2
+										}
+									],
+									"calc": {
+										"points": -25
+									}
+								},
+								{
+									"id": "c381d730-db34-4a2e-975b-e75fcd34f43e",
+									"type": "trait",
+									"name": "Bad Temper",
+									"reference": "B124",
+									"tags": [
+										"Disadvantage",
+										"Mental"
+									],
+									"base_points": -10,
+									"cr": 12,
+									"calc": {
+										"points": -10
+									}
+								},
+								{
+									"id": "f3b6025d-1f04-41eb-a441-8bad69cedee0",
+									"type": "trait",
+									"name": "Greed",
+									"reference": "B137",
+									"notes": "Make a self-control roll any time riches are offered – as payment for fair work, gains from adventure, spoils of crime, or just bait. If you fail, you do whatever it takes to get the payoff.",
+									"tags": [
+										"Disadvantage",
+										"Mental"
+									],
+									"base_points": -15,
+									"cr": 12,
+									"calc": {
+										"points": -15
+									}
+								},
+								{
+									"id": "e1ff7e1e-5350-4d34-b7f4-f6b0e3b81bf8",
+									"type": "trait",
+									"name": "Hidebound",
+									"reference": "B138",
+									"tags": [
+										"Disadvantage",
+										"Mental"
+									],
+									"base_points": -5,
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "on any task that requires creativity or invention, including most rolls against Artist skill, all Engineer rolls for new inventions, and all skill rolls made to use the Gadgeteer advantage",
+											"amount": -2
+										}
+									],
+									"calc": {
+										"points": -5
+									}
+								},
+								{
+									"id": "c1ff4da5-e378-47e8-b494-3219dea32e59",
+									"type": "trait",
+									"name": "Incurious",
+									"reference": "B140",
+									"notes": "Make a self-control roll when confronted with something strange. If you fail, you ignore it!",
+									"tags": [
+										"Disadvantage",
+										"Mental"
+									],
+									"base_points": -5,
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "to new things",
+											"amount": -1
+										}
+									],
+									"cr": 12,
+									"calc": {
+										"points": -5
+									}
+								},
+								{
+									"id": "0cff5877-4118-4ff1-a407-5c4a1ab46dd1",
+									"type": "trait",
+									"name": "Missing Digit",
+									"reference": "B144",
+									"tags": [
+										"Disadvantage",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "d4aa8f0a-c1dc-4812-a2c3-c5827047064a",
+											"type": "modifier",
+											"name": "Finger",
+											"reference": "B144",
+											"notes": "Gives -1 DX with that hand (only)",
+											"cost": -2,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "54a77926-a06a-4221-ab40-0304129fc714",
+											"type": "modifier",
+											"name": "Thumb",
+											"reference": "B144",
+											"notes": "Gives -5 DX with that hand (only)",
+											"cost": -5,
+											"cost_type": "points",
+											"disabled": true
+										}
+									],
+									"calc": {
+										"points": 0
+									}
+								},
+								{
+									"id": "28437d96-930e-4b04-b76c-7ed0181a370e",
+									"type": "trait",
+									"name": "One Eye",
+									"reference": "B147",
+									"tags": [
+										"Disadvantage",
+										"Physical"
+									],
+									"base_points": -15,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "No Depth Perception"
+												}
+											}
+										]
+									},
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "to DX in combat and on any task involving hand-eye coordination",
+											"amount": -1
+										},
+										{
+											"type": "conditional_modifier",
+											"situation": "on ranged attacks (unless you Aim first) and on rolls to operate any vehicle faster than a horse and buggy",
+											"amount": -3
+										}
+									],
+									"calc": {
+										"points": -15
+									}
+								},
+								{
+									"id": "968d2e55-07e2-4785-9211-29b9daa72cd5",
+									"type": "trait",
+									"name": "One Hand",
+									"reference": "B147",
+									"notes": "You cannot use two-handed weapons, wield two weapons at once (or a weapon and a shield), or perform any task that requires two arms",
+									"tags": [
+										"Disadvantage",
+										"Physical"
+									],
+									"base_points": -15,
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "on tasks that are possible with one arm but that are usually executed with two",
+											"amount": -4
+										}
+									],
+									"calc": {
+										"points": -15
+									}
+								},
+								{
+									"id": "97c9c3df-c00e-4cf9-ac3e-2d512c31482d",
+									"type": "trait",
+									"name": "Proud",
+									"reference": "B164",
+									"tags": [
+										"Mental",
+										"Quirk"
+									],
+									"base_points": -1,
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "to orders, insults, or social slights",
+											"amount": -1
+										}
+									],
+									"calc": {
+										"points": -1
+									}
+								},
+								{
+									"id": "7da930d3-f6f3-4143-9771-767f45936357",
+									"type": "trait",
+									"name": "Selfish",
+									"reference": "B153",
+									"notes": "Make a self-control roll whenever you experience a clear social slight or “snub.” On a failure, you lash out at the offending party just as if you had Bad Temper.",
+									"tags": [
+										"Disadvantage",
+										"Mental"
+									],
+									"base_points": -5,
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from others when your Selfishness surfaces",
+											"amount": -3
+										}
+									],
+									"cr": 12,
+									"calc": {
+										"points": -5
+									}
+								},
+								{
+									"id": "52c59d37-0364-4453-9213-c6acb8c65343",
+									"type": "trait",
+									"name": "Stubbornness",
+									"reference": "B157",
+									"tags": [
+										"Disadvantage",
+										"Mental"
+									],
+									"base_points": -5,
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from others",
+											"amount": -1
+										}
+									],
+									"calc": {
+										"points": -5
+									}
+								},
+								{
+									"id": "e999302c-748d-40f0-9ef2-91dea335d8fb",
+									"type": "trait",
+									"name": "Workaholic",
+									"reference": "B162",
+									"tags": [
+										"Disadvantage",
+										"Physical"
+									],
+									"base_points": -5,
+									"calc": {
+										"points": -5
+									}
+								},
+								{
+									"id": "0fea416b-154d-455b-8a11-47dc300e4889",
+									"type": "trait",
+									"name": "Decreased Strength",
+									"reference": "B14",
+									"tags": [
+										"Attribute",
+										"Disadvantage",
+										"Physical"
+									],
+									"levels": 1,
+									"points_per_level": -10,
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"attribute": "st",
+											"amount": -1,
+											"per_level": true
+										}
+									],
+									"can_level": true,
+									"calc": {
+										"points": -10
+									}
+								},
+								{
+									"id": "797f9617-5042-40ad-847c-3e940c5fb107",
+									"type": "trait",
+									"name": "Decreased Health",
+									"reference": "B14",
+									"tags": [
+										"Attribute",
+										"Disadvantage",
+										"Physical"
+									],
+									"levels": 1,
+									"points_per_level": -10,
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"attribute": "ht",
+											"amount": -1,
+											"per_level": true
+										}
+									],
+									"can_level": true,
+									"calc": {
+										"points": -10
+									}
+								}
+							],
+							"name": "-25 Points Chosen From:",
+							"calc": {
+								"points": -166
+							}
+						}
+					],
+					"name": "Class Disadvantages",
+					"calc": {
+						"points": -166
+					}
+				},
+				{
+					"id": "34e6bd8e-2ee8-40b3-ad3d-97d08fb0b1b0",
+					"type": "trait_container",
+					"open": true,
+					"name": "Secondary Characteristics",
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"name": "Architect/Master Builder",
+			"notes": "60 points",
+			"calc": {
+				"points": -76
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "235ac0cb-58f6-457a-bc89-abb3a719ae6e",
+			"type": "skill_container",
+			"open": true,
+			"children": [
+				{
+					"id": "6375717b-6447-4a1b-a006-4fb1e2c3d170",
+					"type": "skill_container",
+					"open": true,
+					"children": [
+						{
+							"id": "a370acbf-6c1c-4514-b030-32a1f8be30ef",
+							"type": "skill",
+							"name": "Architecture",
+							"reference": "B176",
+							"tags": [
+								"Design",
+								"Invention"
+							],
+							"tech_level": "",
+							"difficulty": "iq/a",
+							"points": 8,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Engineer",
+									"specialization": "Civil",
+									"modifier": -4
+								}
+							],
+							"calc": {}
+						},
+						{
+							"id": "68c6b8bf-cbb8-4597-9312-842d1807fbf6",
+							"type": "skill",
+							"name": "Carpentry",
+							"reference": "B183",
+							"tags": [
+								"Craft"
+							],
+							"difficulty": "iq/e",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -4
+								}
+							],
+							"calc": {}
+						},
+						{
+							"id": "69dbe767-afcb-4553-87f6-dc673219dcf6",
+							"type": "skill",
+							"name": "Masonry",
+							"reference": "B207",
+							"tags": [
+								"Craft"
+							],
+							"difficulty": "iq/e",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -4
+								}
+							],
+							"calc": {}
+						},
+						{
+							"id": "19c90ab3-2f0b-41fe-a64f-af08682dd836",
+							"type": "skill_container",
+							"open": true,
+							"children": [
+								{
+									"id": "7926ba16-ded8-43d2-948e-e3834738dad0",
+									"type": "skill",
+									"name": "Carpentry",
+									"reference": "B183",
+									"tags": [
+										"Craft"
+									],
+									"difficulty": "iq/e",
+									"points": 3,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -4
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "d11ec74e-32f7-49b4-8eac-312ee778d741",
+									"type": "skill",
+									"name": "Masonry",
+									"reference": "B207",
+									"tags": [
+										"Craft"
+									],
+									"difficulty": "iq/e",
+									"points": 3,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -4
+										}
+									],
+									"calc": {}
+								}
+							],
+							"name": "Either",
+							"calc": {}
+						}
+					],
+					"name": "Primary Skills",
+					"calc": {}
+				},
+				{
+					"id": "ae188733-0dd0-4330-bd96-e97b40c1421b",
+					"type": "skill_container",
+					"open": true,
+					"children": [
+						{
+							"id": "e818b269-930b-4e2a-a44f-1aa30b69ca40",
+							"type": "skill",
+							"name": "Artist",
+							"reference": "B179",
+							"tags": [
+								"Arts",
+								"Entertainment"
+							],
+							"specialization": "Sketching",
+							"difficulty": "iq/h",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Artist",
+									"modifier": -6
+								}
+							],
+							"calc": {}
+						},
+						{
+							"id": "b5d3c3c2-ae3c-4bcf-87b1-49398c1a5e73",
+							"type": "skill",
+							"name": "Artist",
+							"reference": "B179",
+							"tags": [
+								"Arts",
+								"Entertainment"
+							],
+							"specialization": "@Art (Sculpting or Woodworking)@",
+							"difficulty": "iq/h",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Artist",
+									"modifier": -6
+								}
+							],
+							"calc": {}
+						},
+						{
+							"id": "62f1dcf0-3853-4ed7-8371-e1e322f17f31",
+							"type": "skill",
+							"name": "Mathematics",
+							"reference": "B207",
+							"tags": [
+								"Natural Science"
+							],
+							"specialization": "Applied",
+							"tech_level": "",
+							"difficulty": "iq/h",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Physics",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Engineer",
+									"modifier": -5
+								}
+							],
+							"calc": {}
+						},
+						{
+							"id": "2f659c83-aef9-4ef2-bcc5-bad1a802430f",
+							"type": "skill_container",
+							"open": true,
+							"children": [
+								{
+									"id": "f040d7a5-cb9c-4d84-903c-fc155a0cf58f",
+									"type": "skill",
+									"name": "Administration",
+									"reference": "B174",
+									"tags": [
+										"Business",
+										"Social"
+									],
+									"difficulty": "iq/a",
+									"points": 4,
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Merchant",
+											"modifier": -3
+										},
+										{
+											"type": "iq",
+											"modifier": -5
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "651bd1c5-739c-4bc4-9e05-58d8567362fd",
+									"type": "skill",
+									"name": "Leadership",
+									"reference": "B204",
+									"tags": [
+										"Military",
+										"Social"
+									],
+									"difficulty": "iq/a",
+									"points": 4,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -5
+										}
+									],
+									"calc": {}
+								}
+							],
+							"name": "Either:",
+							"calc": {}
+						},
+						{
+							"id": "39beaad2-e5b8-46b2-836d-5d88e85465ee",
+							"type": "skill_container",
+							"open": true,
+							"children": [
+								{
+									"id": "d44a6de3-145c-4fd0-8a58-0af16fe64d44",
+									"type": "skill",
+									"name": "Merchant",
+									"reference": "B209",
+									"tags": [
+										"Business",
+										"Social"
+									],
+									"difficulty": "iq/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Finance",
+											"modifier": -6
+										},
+										{
+											"type": "skill",
+											"name": "Market Analysis",
+											"modifier": -4
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "316faba7-8023-4765-9575-74b0790a8e68",
+									"type": "skill",
+									"name": "Professional Skill",
+									"reference": "B215",
+									"tags": [
+										"Knowledge"
+									],
+									"specialization": "Thatching",
+									"difficulty": "iq/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -5
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "e60ca85a-dfac-40bb-90c9-c7d7916ba55c",
+									"type": "skill",
+									"name": "Savoir-Faire",
+									"reference": "B218,MA59",
+									"tags": [
+										"Business",
+										"Knowledge",
+										"Social"
+									],
+									"specialization": "High Society",
+									"difficulty": "iq/e",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Savoir-Faire",
+											"specialization": "Servant",
+											"modifier": -2
+										}
+									],
+									"calc": {}
+								}
+							],
+							"name": "4 Points in:",
+							"calc": {}
+						}
+					],
+					"name": "Secondary Skills",
+					"calc": {}
+				},
+				{
+					"id": "d300eaf4-d6ad-41e4-ab69-7667afb72321",
+					"type": "skill_container",
+					"open": true,
+					"children": [
+						{
+							"id": "946a7451-d6af-4411-aef3-5c2ec77f9a84",
+							"type": "skill_container",
+							"open": true,
+							"children": [
+								{
+									"id": "0bd4f5e7-b29e-45b3-b783-d20cb4e734c4",
+									"type": "skill",
+									"name": "Accounting",
+									"reference": "B174",
+									"tags": [
+										"Business"
+									],
+									"difficulty": "iq/h",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -6
+										},
+										{
+											"type": "skill",
+											"name": "Finance",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Mathematics",
+											"specialization": "Statistics",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Merchant",
+											"modifier": -5
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "06f0dfc6-381a-4739-b441-77a62362ae04",
+									"type": "skill_container",
+									"children": [
+										{
+											"id": "ebae64da-19b2-4b5f-9c99-d4624f2dfd82",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "General nature of its settlements and towns, political allegiances, leaders, and most citizens of Status 5+",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@Barony, County, Duchy, or Small Nation@",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "f2dd4ba4-0bf1-412c-9653-192ffcd60f05",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "General nature of its settlements and towns, political allegiances, leaders, and most citizens of Status 5+",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@Barony, County, Duchy, or Small Nation@; Lived there",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "iq",
+													"modifier": -4
+												},
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "0b4167c3-cab1-4b9c-bfcf-e41556ff6fea",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "All important businesses, streets, citizens, leaders, etc.",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@City@",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "04bd8dbc-43f0-43db-bb25-5329b3a89a35",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "All important businesses, streets, citizens, leaders, etc.",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@City@; Lived there",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "iq",
+													"modifier": -4
+												},
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "f8796557-c165-4c33-8b6b-4e6a6c2183ef",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "Location of its major cities and important sites; awareness of its major customs, ethnic groups, and languages (but not necessarily expertise); names of folk of Status 6+; and a general understanding of the economic and political situation",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@Large Nation@",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "3e7de3a7-d118-407e-868b-4e66897e0a2d",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "Location of its major cities and important sites; awareness of its major customs, ethnic groups, and languages (but not necessarily expertise); names of folk of Status 6+; and a general understanding of the economic and political situation",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@Large Nation@; Lived there",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "iq",
+													"modifier": -4
+												},
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "11546505-bcf2-4c57-b902-427f7ae5d8fd",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "The inhabitants, trails, streams, hiding places, ambush sites, flora, and fauna of a few hundred acres",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@Rural Area@",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "79d4804b-1650-4f57-bbe4-b4e93b0bd148",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "The inhabitants, trails, streams, hiding places, ambush sites, flora, and fauna of a few hundred acres",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@Rural Area@; Lived there",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "iq",
+													"modifier": -4
+												},
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "3cb6463b-079c-4c30-a6e1-89e70d339b1d",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "The residents and buildings of a few city blocks",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@Urban Neighborhood@",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "1024796d-20f4-47d3-af55-d8a6d371f30e",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "The residents and buildings of a few city blocks",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@Urban Neighborhood@; Lived there",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "iq",
+													"modifier": -4
+												},
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "961859ed-6271-4da1-9d0c-1f212a7ec94f",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "All important citizens and businesses, and most unimportant ones; all public buildings and most houses",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@Village or Town@",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "c7676e61-48be-4a10-be4a-2c92c175bbc4",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "All important citizens and businesses, and most unimportant ones; all public buildings and most houses",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@Village or Town@; Lived there",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "iq",
+													"modifier": -4
+												},
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										}
+									],
+									"name": "Area Knowledge",
+									"calc": {}
+								},
+								{
+									"id": "50f44a9b-303b-4fb4-80af-62c1122909e1",
+									"type": "skill",
+									"name": "Forced Entry",
+									"reference": "B196",
+									"tags": [
+										"Criminal",
+										"Police",
+										"Spy",
+										"Street"
+									],
+									"difficulty": "dx/e",
+									"points": 1,
+									"calc": {}
+								},
+								{
+									"id": "b640cfcc-31a8-414f-970b-fddd7b4407e2",
+									"type": "skill",
+									"name": "Philosophy",
+									"reference": "B213",
+									"tags": [
+										"Humanities",
+										"Social Sciences"
+									],
+									"specialization": "@Specialty@",
+									"difficulty": "iq/h",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -6
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "8f91e014-5aea-4004-ae3c-c93848660107",
+									"type": "skill",
+									"name": "Theology",
+									"reference": "B226",
+									"tags": [
+										"Humanities",
+										"Social Sciences"
+									],
+									"specialization": "@Specialty@",
+									"difficulty": "iq/h",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -6
+										},
+										{
+											"type": "skill",
+											"name": "Religious Ritual",
+											"specialization": "@Specialty@",
+											"modifier": -4
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "665bdd31-3ee5-4ce6-885e-8fa63a340487",
+									"type": "skill",
+									"name": "Any Secondary Skill",
+									"difficulty": "dx/a",
+									"points": 1,
+									"calc": {}
+								}
+							],
+							"name": "4 Points in:",
+							"calc": {}
+						}
+					],
+					"name": "Background Skills",
+					"calc": {}
+				}
+			],
+			"name": "Architect/Master Builder",
+			"calc": {}
+		}
+	]
+}

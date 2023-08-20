@@ -1,0 +1,2837 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "0422b41e-caa7-4875-9ee1-d1ab252ee1d1",
+	"traits": [
+		{
+			"id": "bdfed249-6d94-4b8c-928f-e784ebb6a6c6",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "2432dc05-8d77-4491-ac5e-cd16b645785f",
+					"type": "trait_container",
+					"children": [
+						{
+							"id": "fd187f7d-38f9-4488-9d71-f59d282d9fd2",
+							"type": "trait",
+							"name": "Increased Strength",
+							"reference": "B14",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "fc2b398f-467b-4c36-857b-98087975f0c4",
+									"type": "modifier",
+									"name": "No Fine Manipulators",
+									"reference": "B15",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "89e24b12-233b-4ad9-a77a-934e7bc640f7",
+									"type": "modifier",
+									"name": "Size",
+									"reference": "B15",
+									"cost": -10,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "4f3a7bdb-ed81-4735-87e8-d9eaeb4856c7",
+									"type": "modifier",
+									"name": "Super-Effort",
+									"reference": "SU24",
+									"cost": 300,
+									"disabled": true
+								}
+							],
+							"levels": 1,
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "st",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 10
+							}
+						}
+					],
+					"name": "Attributes",
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "b64a9d7a-dc75-42b2-9e99-b937c365ac3a",
+					"type": "trait_container",
+					"children": [
+						{
+							"id": "576b1e18-ddc6-45b1-b981-d5b83adfbb8d",
+							"type": "trait_container",
+							"open": true,
+							"children": [
+								{
+									"id": "adad3b1e-c7af-4147-934f-c9404bbe75c8",
+									"type": "trait",
+									"name": "Increased Dexterity",
+									"reference": "B15",
+									"tags": [
+										"Advantage",
+										"Attribute",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "26b39aca-fc45-404a-9dbd-be0e55323b67",
+											"type": "modifier",
+											"name": "No Fine Manipulators",
+											"cost": -40,
+											"disabled": true
+										}
+									],
+									"levels": 1,
+									"points_per_level": 20,
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"attribute": "dx",
+											"amount": 1,
+											"per_level": true
+										}
+									],
+									"can_level": true,
+									"calc": {
+										"points": 20
+									}
+								},
+								{
+									"id": "14db282a-d01d-4518-acc8-b5c6decea666",
+									"type": "trait",
+									"name": "Increased Intelligence",
+									"reference": "B15",
+									"tags": [
+										"Advantage",
+										"Attribute",
+										"Mental"
+									],
+									"levels": 1,
+									"points_per_level": 20,
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"attribute": "iq",
+											"amount": 1,
+											"per_level": true
+										}
+									],
+									"can_level": true,
+									"calc": {
+										"points": 20
+									}
+								},
+								{
+									"id": "3d8be704-bbf6-481f-bb1e-b699dec7b660",
+									"type": "trait",
+									"name": "Talent (Artificer)",
+									"reference": "B90",
+									"tags": [
+										"Advantage",
+										"Mental",
+										"Talent"
+									],
+									"levels": 1,
+									"points_per_level": 10,
+									"features": [
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "armoury"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Carpentry"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Electrician"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Electronics Repair"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Engineer"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Machinist"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Masonry"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Mechanic"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Smith"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "reaction_bonus",
+											"situation": "from any employer",
+											"amount": 1,
+											"per_level": true
+										}
+									],
+									"can_level": true,
+									"calc": {
+										"points": 10
+									}
+								},
+								{
+									"id": "37912860-48f4-42a3-8861-86efb82350ad",
+									"type": "trait",
+									"name": "Fit",
+									"reference": "B55",
+									"notes": "Recover FP at twice the normal rate (but not FP spent for spells or psi powers)",
+									"tags": [
+										"Advantage",
+										"Physical"
+									],
+									"base_points": 5,
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "to all HT rolls to stay conscious, avoid death, resist disease, or resist poison",
+											"amount": 1
+										}
+									],
+									"calc": {
+										"points": 5
+									}
+								},
+								{
+									"id": "4b390f6a-73ce-45da-9e60-fe588a5d169c",
+									"type": "trait",
+									"name": "High Pain Threshold",
+									"reference": "B59",
+									"notes": "Never suffer shock penalties when injured",
+									"tags": [
+										"Advantage",
+										"Physical"
+									],
+									"base_points": 10,
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "on all HT rolls to avoid knockdown and stunning",
+											"amount": 3
+										},
+										{
+											"type": "conditional_modifier",
+											"situation": "to resist torture",
+											"amount": 3
+										}
+									],
+									"calc": {
+										"points": 10
+									}
+								},
+								{
+									"id": "a29e1d0b-40a8-47ae-a25f-9647e629d38a",
+									"type": "trait",
+									"name": "High Manual Dexterity",
+									"reference": "B59",
+									"tags": [
+										"Advantage",
+										"Physical"
+									],
+									"levels": 1,
+									"points_per_level": 5,
+									"features": [
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "contains",
+												"qualifier": "artist"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "jeweler"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "knot-tying"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "leatherworking"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "lockpicking"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "pickpocket"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "sewing"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "sleight of hand"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "surgery"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "machinist"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "contains",
+												"qualifier": "mechanic"
+											},
+											"amount": 1,
+											"per_level": true
+										}
+									],
+									"can_level": true,
+									"calc": {
+										"points": 5
+									}
+								},
+								{
+									"id": "583bb8b8-faf3-4043-8546-06948e5a24a0",
+									"type": "trait",
+									"name": "Patron",
+									"reference": "B72",
+									"tags": [
+										"Advantage",
+										"Social"
+									],
+									"modifiers": [
+										{
+											"id": "ca6e7fa5-f1d2-4caf-8130-1e14247b114c",
+											"type": "modifier",
+											"name": "@Who: Individual with 150% of PC's starting points@",
+											"reference": "B72",
+											"cost": 10,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "4cf740f8-2969-4d28-909a-2023f651afb8",
+											"type": "modifier",
+											"name": "@Who: Organization with assets of at least 1000 times starting wealth@",
+											"reference": "B72",
+											"cost": 10,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "257e29c8-37c1-4b93-aa25-f900e3730159",
+											"type": "modifier",
+											"name": "@Who: Individual with twice the PC's starting points@",
+											"reference": "B72",
+											"cost": 10,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "4e6d9597-f252-4103-9783-9eb93b6ab9e4",
+											"type": "modifier",
+											"name": "@Who: Organization with assets of at least 10000 times starting wealth@",
+											"reference": "B72",
+											"cost": 15,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "3266d043-9983-473b-baf1-17ca67f656e2",
+											"type": "modifier",
+											"name": "@Who: An ultra-powerful individual@",
+											"reference": "B72",
+											"cost": 20,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "d8c2f807-0e0f-4ef7-9d97-8a8068637396",
+											"type": "modifier",
+											"name": "@Who: Organization with assets of at least 100000 times starting wealth@",
+											"reference": "B72",
+											"cost": 20,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "f1a000ac-e77b-4679-ba32-793edb3b46e9",
+											"type": "modifier",
+											"name": "@Who: Organization with assets of at least 1000000 times starting wealth@",
+											"reference": "B72",
+											"cost": 25,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "ab0b7722-c729-462a-9739-13e9aed8fc30",
+											"type": "modifier",
+											"name": "@Who: A national government or giant multi-national organization@",
+											"reference": "B72",
+											"cost": 30,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "f4b4f76b-f9b7-4890-9369-ddc924bffc31",
+											"type": "modifier",
+											"name": "@Who: A diety@",
+											"reference": "B72",
+											"cost": 30,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "a2cea185-a5fd-43bd-8f0e-d849ba77a0d8",
+											"type": "modifier",
+											"name": "Appears almost all the time",
+											"reference": "B36",
+											"notes": "15-",
+											"cost": 3,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "ba0673f7-bdcf-4070-918a-d6f05b6bd61f",
+											"type": "modifier",
+											"name": "Appears quite often",
+											"reference": "B36",
+											"notes": "12-",
+											"cost": 2,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "3efb797e-b9a6-46fe-b61f-8ef50643b603",
+											"type": "modifier",
+											"name": "Appears fairly often",
+											"reference": "B36",
+											"notes": "9-",
+											"cost": 1,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "5d221249-dba7-4ea4-ab2a-dec8748aec40",
+											"type": "modifier",
+											"name": "Appears quite rarely",
+											"reference": "B36",
+											"notes": "6-",
+											"cost": 0.5,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "2c3241c9-2ab8-43ab-bcbe-a32fe118b25e",
+											"type": "modifier",
+											"name": "Equipment",
+											"reference": "B73",
+											"notes": "@Equipment worth no more than average starting wealth@",
+											"cost": 50,
+											"disabled": true
+										},
+										{
+											"id": "c82cc5f2-3267-49fc-b5db-9eed8cd75980",
+											"type": "modifier",
+											"name": "Equipment",
+											"reference": "B73",
+											"notes": "@Equipment worth more than average starting wealth@",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "e1c52309-b1f8-4d76-845f-3861b5ca7965",
+											"type": "modifier",
+											"name": "Highly Accessible",
+											"reference": "B73",
+											"cost": 50,
+											"disabled": true
+										},
+										{
+											"id": "347a42b2-41b1-4585-a606-d4c79109a131",
+											"type": "modifier",
+											"name": "Special Abilities",
+											"reference": "B73",
+											"notes": "@Extensive social or political power@",
+											"cost": 50,
+											"disabled": true
+										},
+										{
+											"id": "fb00c0f5-50b1-4c83-bdde-416d3af4354b",
+											"type": "modifier",
+											"name": "Special Abilities",
+											"reference": "B73",
+											"notes": "@Magical powers in a non-magical world, higher TL equipment, grants special powers or is supernatural@",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "b50650c9-f400-4067-918d-cd8ac764aa25",
+											"type": "modifier",
+											"name": "Minimal Interventions",
+											"reference": "B73",
+											"cost": -50,
+											"disabled": true
+										},
+										{
+											"id": "48352f86-829a-47bd-9d3b-92cb9272c747",
+											"type": "modifier",
+											"name": "Secret",
+											"reference": "B73",
+											"cost": -50,
+											"disabled": true
+										},
+										{
+											"id": "83984495-00af-4740-9352-ae61f9cf84c8",
+											"type": "modifier",
+											"name": "Unwilling",
+											"reference": "B74",
+											"cost": -50,
+											"disabled": true
+										},
+										{
+											"id": "575ea8f5-1ea3-40ee-885b-2476141dce13",
+											"type": "modifier",
+											"name": "Favor",
+											"reference": "B55",
+											"cost": 0.2,
+											"cost_type": "multiplier",
+											"disabled": true
+										}
+									],
+									"calc": {
+										"points": 0
+									}
+								},
+								{
+									"id": "286c92c8-aa0e-445c-bdff-1858024ce2ac",
+									"type": "trait",
+									"name": "Reputation",
+									"reference": "B26",
+									"tags": [
+										"Advantage",
+										"Social"
+									],
+									"modifiers": [
+										{
+											"id": "c252ee4b-cfda-4f77-bf61-b58b26540cc4",
+											"type": "modifier",
+											"name": "People Affected",
+											"reference": "B27",
+											"notes": "Almost everyone",
+											"cost": 1,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "debba18a-15ea-4b7a-b626-395d0e6380dc",
+											"type": "modifier",
+											"name": "People Affected",
+											"reference": "B27",
+											"notes": "Almost everyone except @large class of people@",
+											"cost": 0.67,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "f88b92d7-5fd0-4fa2-811f-b2a55a3ac9ee",
+											"type": "modifier",
+											"name": "People Affected",
+											"reference": "B27",
+											"notes": "@Large class of people@",
+											"cost": 0.5,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "187500f5-913d-4a76-befb-7069786c8689",
+											"type": "modifier",
+											"name": "People Affected",
+											"reference": "B27",
+											"notes": "@Small class of people@",
+											"cost": 0.33,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "fec94651-3d7e-4467-b02d-637431c3be2d",
+											"type": "modifier",
+											"name": "Recognized all the time",
+											"reference": "B28",
+											"cost": 1,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "69078160-d887-48bf-8f4f-a4acf43cc408",
+											"type": "modifier",
+											"name": "Recognized sometimes",
+											"reference": "B28",
+											"notes": "10-",
+											"cost": 0.5,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "7c2a62cd-4491-4cb3-89e0-068a3c5aa0fb",
+											"type": "modifier",
+											"name": "Recognized occasionally",
+											"reference": "B28",
+											"notes": "7-",
+											"cost": 0.33,
+											"cost_type": "multiplier",
+											"disabled": true
+										}
+									],
+									"levels": 1,
+									"points_per_level": 5,
+									"can_level": true,
+									"calc": {
+										"points": 5
+									}
+								},
+								{
+									"id": "581f99a9-6552-49ef-a1df-9fc8a672d056",
+									"type": "trait",
+									"name": "Single-Minded",
+									"reference": "B85",
+									"tags": [
+										"Advantage",
+										"Mental"
+									],
+									"base_points": 5,
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "to rolls for any lengthy mental task you concentrate on to the exclusion of other activities, if the GM feels such focus would be beneficial",
+											"amount": 3
+										},
+										{
+											"type": "conditional_modifier",
+											"situation": "to all rolls to notice interruptions while obsessed with a task",
+											"amount": -5
+										}
+									],
+									"calc": {
+										"points": 5
+									}
+								},
+								{
+									"id": "9b737232-1f85-4da4-bd7c-0803d2c9d830",
+									"type": "trait",
+									"name": "Status",
+									"reference": "B28",
+									"notes": "@Description@",
+									"tags": [
+										"Advantage",
+										"Social"
+									],
+									"levels": 1,
+									"points_per_level": 5,
+									"can_level": true,
+									"calc": {
+										"points": 5
+									}
+								},
+								{
+									"id": "6f08cc9d-c66d-4b98-b209-14c0efe90173",
+									"type": "trait",
+									"name": "Temperature Tolerance",
+									"reference": "B93",
+									"tags": [
+										"Advantage",
+										"Physical"
+									],
+									"levels": 1,
+									"points_per_level": 1,
+									"can_level": true,
+									"calc": {
+										"points": 1
+									}
+								},
+								{
+									"id": "51bd2a7a-4c0b-44ae-ac8e-b3e3f24fb861",
+									"type": "trait",
+									"name": "Wealth",
+									"reference": "B25",
+									"tags": [
+										"Advantage",
+										"Disadvantage",
+										"Social"
+									],
+									"modifiers": [
+										{
+											"id": "7a8da23e-2e81-49bf-ae75-5a6e7dc73904",
+											"type": "modifier",
+											"name": "Dead Broke",
+											"reference": "B25",
+											"notes": "Starting wealth is $0",
+											"cost": -25,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "ab963cc1-1858-49fb-b9d4-13556cb8fa10",
+											"type": "modifier",
+											"name": "Poor",
+											"reference": "B25",
+											"notes": "Starting wealth is 1/5 average",
+											"cost": -15,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "e7e1667e-2ef0-402a-9624-3c3c5bd8623b",
+											"type": "modifier",
+											"name": "Struggling",
+											"reference": "B25",
+											"notes": "Starting wealth is 1/2 average",
+											"cost": -10,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "bc11b24b-7076-454c-a326-9ed504c3fb88",
+											"type": "modifier",
+											"name": "Average",
+											"reference": "B25",
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "94963088-321e-4bdd-9702-69d463648f45",
+											"type": "modifier",
+											"name": "Comfortable",
+											"reference": "B25",
+											"notes": "Starting wealth is 2x average",
+											"cost": 10,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "1eebecfe-9917-4eea-a243-50a12b2a65f8",
+											"type": "modifier",
+											"name": "Wealthy",
+											"reference": "B25",
+											"notes": "Starting wealth is 5x average",
+											"cost": 20,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "4e79f009-37f6-453d-ba45-d10eb53c2f06",
+											"type": "modifier",
+											"name": "Very Wealthy",
+											"reference": "B25",
+											"notes": "Starting wealth is 20x average",
+											"cost": 30,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "1b0a990f-16c2-4796-9361-c81ea44ca994",
+											"type": "modifier",
+											"name": "Filthy Rich",
+											"reference": "B25",
+											"notes": "Starting wealth is 100x average",
+											"cost": 50,
+											"cost_type": "points",
+											"disabled": true
+										}
+									],
+									"calc": {
+										"points": 0
+									}
+								}
+							],
+							"name": "20 Points Chosen From:",
+							"calc": {
+								"points": 86
+							}
+						}
+					],
+					"name": "Class Advantages",
+					"calc": {
+						"points": 86
+					}
+				},
+				{
+					"id": "d954e820-c513-456d-acab-ba9456b5a454",
+					"type": "trait_container",
+					"children": [
+						{
+							"id": "345dda46-539c-4dd9-8e63-9fbdef76568f",
+							"type": "trait_container",
+							"open": true,
+							"children": [
+								{
+									"id": "a819eaf5-91e9-4bdd-9127-e8479b4cc58d",
+									"type": "trait",
+									"name": "Bad Back",
+									"reference": "B123",
+									"notes": "Throw out your back whenever you make a ST roll, and whenever you roll 17 or 18 on an attack or defense roll in melee combat, or on a roll for an “athletic” skill such as Acrobatics, make a HT roll as well",
+									"tags": [
+										"Disadvantage",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "42d07232-2402-4a80-909e-47679015ba3a",
+											"type": "modifier",
+											"name": "Severe",
+											"reference": "B123",
+											"notes": "The HT roll is at -2",
+											"cost": -10,
+											"cost_type": "points",
+											"disabled": true
+										}
+									],
+									"base_points": -15,
+									"calc": {
+										"points": -15
+									}
+								},
+								{
+									"id": "c6400ef3-a23f-4b28-b680-00b155707387",
+									"type": "trait",
+									"name": "Bad Temper",
+									"reference": "B124",
+									"tags": [
+										"Disadvantage",
+										"Mental"
+									],
+									"base_points": -10,
+									"cr": 12,
+									"calc": {
+										"points": -10
+									}
+								},
+								{
+									"id": "9ca8058f-f4d5-41c5-be8c-94479fbe10c8",
+									"type": "trait",
+									"name": "Hard of Hearing",
+									"reference": "B138",
+									"tags": [
+										"Disadvantage",
+										"Physical"
+									],
+									"base_points": -10,
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"attribute": "hearing",
+											"amount": -4
+										},
+										{
+											"type": "conditional_modifier",
+											"situation": "to any skill roll where it is important that you understand someone speaking",
+											"amount": -4
+										}
+									],
+									"calc": {
+										"points": -10
+									}
+								},
+								{
+									"id": "cfb699be-ef04-470a-ab47-6a405b1781a8",
+									"type": "trait",
+									"name": "Odious Personal Habit",
+									"reference": "B22",
+									"notes": "@Habit@",
+									"tags": [
+										"Disadvantage",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "3d982038-f3cc-476f-8f1a-1221f87c1ec8",
+											"type": "modifier",
+											"name": "-1 Reaction",
+											"reference": "B22",
+											"cost": -5,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "9dd7b646-b563-4eb1-ac3b-6672412868c1",
+											"type": "modifier",
+											"name": "-2 Reaction",
+											"reference": "B22",
+											"cost": -10,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "5ed445b6-67ea-4f24-af06-50d80a1d0d94",
+											"type": "modifier",
+											"name": "-3 Reaction",
+											"reference": "B22",
+											"cost": -15,
+											"cost_type": "points",
+											"disabled": true
+										}
+									],
+									"calc": {
+										"points": 0
+									}
+								},
+								{
+									"id": "7f18cb10-58fc-42e7-97c1-938c0c9dd376",
+									"type": "trait",
+									"name": "Overconfidence",
+									"reference": "B148",
+									"notes": "You must make a self-control roll any time the GM feels you show an unreasonable degree of caution. If you fail, you must go ahead as though you were able to handle the situation!",
+									"tags": [
+										"Disadvantage",
+										"Mental"
+									],
+									"base_points": -5,
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from young or naive individuals who believe you are as good as you say you are",
+											"amount": 2
+										},
+										{
+											"type": "reaction_bonus",
+											"situation": "from experienced NPCs",
+											"amount": -2
+										}
+									],
+									"cr": 12,
+									"calc": {
+										"points": -5
+									}
+								},
+								{
+									"id": "a2673c8d-8820-4064-821c-5f03ae051abf",
+									"type": "trait",
+									"name": "Reputation",
+									"reference": "B26",
+									"tags": [
+										"Disadvantage",
+										"Social"
+									],
+									"modifiers": [
+										{
+											"id": "2d62ae82-6680-49a9-9020-6959b78b5fa3",
+											"type": "modifier",
+											"name": "People Affected",
+											"reference": "B27",
+											"notes": "Almost everyone",
+											"cost": 1,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "a2268bcc-8fdf-4d59-a981-51b5d7b754c9",
+											"type": "modifier",
+											"name": "People Affected",
+											"reference": "B27",
+											"notes": "Almost everyone except @large class of people@",
+											"cost": 0.67,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "5212677b-8d07-45a8-9dbd-31178e8c700d",
+											"type": "modifier",
+											"name": "People Affected",
+											"reference": "B27",
+											"notes": "@Large class of people@",
+											"cost": 0.5,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "9c95aed8-9723-467b-9203-4f53e0d0b302",
+											"type": "modifier",
+											"name": "People Affected",
+											"reference": "B27",
+											"notes": "@Small class of people@",
+											"cost": 0.33,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "70033691-6d40-4603-ba7b-9a34a9e31c6e",
+											"type": "modifier",
+											"name": "Recognized all the time",
+											"reference": "B28",
+											"cost": 1,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "d45dfb5c-d688-4e49-aaa9-ea4c435d36c4",
+											"type": "modifier",
+											"name": "Recognized sometimes",
+											"reference": "B28",
+											"notes": "10-",
+											"cost": 0.5,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "5325fef5-fb0e-467b-ad74-588ea0bcacda",
+											"type": "modifier",
+											"name": "Recognized occasionally",
+											"reference": "B28",
+											"notes": "7-",
+											"cost": 0.33,
+											"cost_type": "multiplier",
+											"disabled": true
+										}
+									],
+									"levels": 1,
+									"points_per_level": -5,
+									"can_level": true,
+									"calc": {
+										"points": -5
+									}
+								},
+								{
+									"id": "6e245191-087c-4f8e-9dbe-e8c904588ec6",
+									"type": "trait",
+									"name": "Stubbornness",
+									"reference": "B157",
+									"tags": [
+										"Disadvantage",
+										"Mental"
+									],
+									"base_points": -5,
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from others",
+											"amount": -1
+										}
+									],
+									"calc": {
+										"points": -5
+									}
+								},
+								{
+									"id": "bb254d08-0449-43e0-93db-e1770b139cb2",
+									"type": "trait",
+									"name": "Unfit",
+									"reference": "B160",
+									"notes": "You lose FP at twice the normal rate",
+									"tags": [
+										"Disadvantage",
+										"Physical"
+									],
+									"base_points": -5,
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "to all HT rolls to remain conscious, avoid death, resist disease or poison, etc",
+											"amount": -1
+										}
+									],
+									"calc": {
+										"points": -5
+									}
+								},
+								{
+									"id": "79bd64e7-7ae0-42c5-a68d-05434e8fefd8",
+									"type": "trait",
+									"name": "Workaholic",
+									"reference": "B162",
+									"tags": [
+										"Disadvantage",
+										"Physical"
+									],
+									"base_points": -5,
+									"calc": {
+										"points": -5
+									}
+								}
+							],
+							"name": "-15 Points Chosen From:",
+							"calc": {
+								"points": -60
+							}
+						}
+					],
+					"name": "Class Disadvantages",
+					"calc": {
+						"points": -60
+					}
+				},
+				{
+					"id": "29aefca2-12f6-4bc1-b39c-bbcc79b60817",
+					"type": "trait_container",
+					"open": true,
+					"name": "Secondary Characteristics",
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"name": "Armorer",
+			"reference": "HF4",
+			"notes": "30 Points",
+			"tags": [
+				"Job Template"
+			],
+			"calc": {
+				"points": 36
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "6bf15d44-a9f1-408f-965b-255181af7388",
+			"type": "skill_container",
+			"open": true,
+			"children": [
+				{
+					"id": "b5dd17fa-a527-424b-8131-cbfcc699b01f",
+					"type": "skill_container",
+					"open": true,
+					"children": [
+						{
+							"id": "e216e3c7-1943-4857-b047-ea6a0277c1aa",
+							"type": "skill",
+							"name": "Armoury",
+							"reference": "B178",
+							"tags": [
+								"Maintenance",
+								"Military",
+								"Repair"
+							],
+							"specialization": "@Armor type@",
+							"tech_level": "",
+							"difficulty": "iq/a",
+							"points": 8,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Engineer",
+									"specialization": "Battlesuits",
+									"modifier": -4
+								}
+							],
+							"calc": {}
+						}
+					],
+					"name": "Primary Skills",
+					"calc": {}
+				},
+				{
+					"id": "45214d86-3c51-4b56-aede-bf7dfee383a9",
+					"type": "skill_container",
+					"open": true,
+					"children": [
+						{
+							"id": "534e33ec-bb9b-4cc8-83c7-86e67fef8f1b",
+							"type": "skill_container",
+							"open": true,
+							"children": [
+								{
+									"id": "8b7d7e80-4db7-4143-a367-c05df95fa8f5",
+									"type": "skill",
+									"name": "Accounting",
+									"reference": "B174",
+									"tags": [
+										"Business"
+									],
+									"difficulty": "iq/h",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -6
+										},
+										{
+											"type": "skill",
+											"name": "Finance",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Mathematics",
+											"specialization": "Statistics",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Merchant",
+											"modifier": -5
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "9319938f-0c25-4968-9dc8-9ceb2da1c024",
+									"type": "skill",
+									"name": "Administration",
+									"reference": "B174",
+									"tags": [
+										"Business",
+										"Social"
+									],
+									"difficulty": "iq/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Merchant",
+											"modifier": -3
+										},
+										{
+											"type": "iq",
+											"modifier": -5
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "5dd2a9be-386f-4a98-8ff7-d7d329d762fb",
+									"type": "skill",
+									"name": "Artist",
+									"reference": "B179",
+									"tags": [
+										"Arts",
+										"Entertainment"
+									],
+									"specialization": "Drawing",
+									"difficulty": "iq/h",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -6
+										},
+										{
+											"type": "skill",
+											"name": "Artist",
+											"specialization": "Calligraphy",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Artist",
+											"specialization": "Illumination",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Artist",
+											"specialization": "Painting",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Artist",
+											"specialization": "Body Art",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Artist",
+											"modifier": -6
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "e4b25b14-1df9-483a-8c03-0ce981cb7c77",
+									"type": "skill",
+									"name": "Artist",
+									"reference": "B179",
+									"tags": [
+										"Arts",
+										"Craft",
+										"Entertainment"
+									],
+									"specialization": "Woodworking",
+									"difficulty": "iq/h",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -6
+										},
+										{
+											"type": "skill",
+											"name": "Carpentry",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Artist",
+											"specialization": "Interior Decorating",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Artist",
+											"specialization": "Scene Design",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Artist",
+											"modifier": -6
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "f258851a-f7c3-46f7-ae93-09a197925669",
+									"type": "skill",
+									"name": "Leatherworking",
+									"reference": "B205",
+									"tags": [
+										"Craft"
+									],
+									"difficulty": "dx/e",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "3c30a82c-0b6a-4a28-a86e-80ce53138bc4",
+									"type": "skill",
+									"name": "Mechanic",
+									"reference": "B207",
+									"tags": [
+										"Maintenance",
+										"Repair"
+									],
+									"specialization": "Simple Machines",
+									"tech_level": "",
+									"difficulty": "iq/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Engineer",
+											"specialization": "Aerospace",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Machinist",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Mechanic",
+											"modifier": -4
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "15061efb-c4df-453f-ba3d-e8b893663a9a",
+									"type": "skill",
+									"name": "Merchant",
+									"reference": "B209",
+									"tags": [
+										"Business",
+										"Social"
+									],
+									"difficulty": "iq/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Finance",
+											"modifier": -6
+										},
+										{
+											"type": "skill",
+											"name": "Market Analysis",
+											"modifier": -4
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "c60171d4-ed33-47bc-aabf-29dcc253a512",
+									"type": "skill",
+									"name": "Metallurgy",
+									"reference": "B209",
+									"tags": [
+										"Natural Science"
+									],
+									"tech_level": "",
+									"difficulty": "iq/h",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Chemistry",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Jeweler",
+											"modifier": -8
+										},
+										{
+											"type": "skill",
+											"name": "Smith",
+											"modifier": -8
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "1ef12b66-bbc2-4059-a3ac-f1c49906459a",
+									"type": "skill",
+									"name": "Naturalist",
+									"reference": "B211",
+									"tags": [
+										"Animal",
+										"Exploration",
+										"Natural Science",
+										"Outdoor",
+										"Plant"
+									],
+									"specialization": "Earthlike",
+									"difficulty": "iq/h",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -6
+										},
+										{
+											"type": "skill",
+											"name": "Biology",
+											"modifier": -3
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "f0d47ad8-7587-4c2a-8be1-dc8752fac8ce",
+									"type": "skill",
+									"name": "Professional Skill",
+									"reference": "B215",
+									"tags": [
+										"Knowledge"
+									],
+									"specialization": "Tanner",
+									"difficulty": "iq/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -5
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "6539b0ab-c558-4175-8d30-6c42ca507f1a",
+									"type": "skill",
+									"name": "Savoir-Faire",
+									"reference": "B218,MA59",
+									"tags": [
+										"Business",
+										"Knowledge",
+										"Social"
+									],
+									"specialization": "High Society",
+									"difficulty": "iq/e",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Savoir-Faire",
+											"specialization": "Servant",
+											"modifier": -2
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "f3e38186-87de-439b-86c3-eef1a8a7ce56",
+									"type": "skill",
+									"name": "Savoir-Faire",
+									"reference": "B218,MA59",
+									"tags": [
+										"Knowledge",
+										"Military",
+										"Social"
+									],
+									"specialization": "Military",
+									"difficulty": "iq/e",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -4
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "18b495aa-57e7-4749-b1b1-cea192ad45b3",
+									"type": "skill",
+									"name": "Sewing",
+									"reference": "B219",
+									"tags": [
+										"Craft",
+										"Everyman"
+									],
+									"tech_level": "",
+									"difficulty": "dx/e",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "0d4183e0-830a-4610-a200-95b291f19512",
+									"type": "skill",
+									"name": "Scrounging",
+									"reference": "B218",
+									"tags": [
+										"Criminal",
+										"Street"
+									],
+									"difficulty": "per/e",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "per",
+											"modifier": -4
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "842e38d8-1c17-4336-be66-68900aa54539",
+									"type": "skill",
+									"name": "Smith",
+									"reference": "B221",
+									"tags": [
+										"Craft"
+									],
+									"specialization": "Iron",
+									"tech_level": "",
+									"difficulty": "iq/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Smith",
+											"modifier": -4
+										}
+									],
+									"calc": {}
+								}
+							],
+							"name": "4 Points in:",
+							"calc": {}
+						}
+					],
+					"name": "Secondary Skills",
+					"calc": {}
+				},
+				{
+					"id": "300fc026-ac41-41c8-b2d8-7ba0f1659406",
+					"type": "skill_container",
+					"open": true,
+					"children": [
+						{
+							"id": "afd1f5a1-2dbf-4b11-937a-643632181c34",
+							"type": "skill_container",
+							"open": true,
+							"children": [
+								{
+									"id": "69a52138-6b40-4f2e-9c20-2968dc7047a8",
+									"type": "skill",
+									"name": "Animal Handling",
+									"reference": "B175",
+									"tags": [
+										"Animal"
+									],
+									"specialization": "@Specialty@",
+									"difficulty": "iq/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -5
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "785561fc-da1d-46ad-af19-5acd6b67fba5",
+									"type": "skill_container",
+									"children": [
+										{
+											"id": "330681a6-38e7-4ac4-b217-e4d95d1e624f",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "General nature of its settlements and towns, political allegiances, leaders, and most citizens of Status 5+",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@Barony, County, Duchy, or Small Nation@",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "a67183cb-a935-48f5-a29d-2ab9933ca5a3",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "General nature of its settlements and towns, political allegiances, leaders, and most citizens of Status 5+",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@Barony, County, Duchy, or Small Nation@; Lived there",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "iq",
+													"modifier": -4
+												},
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "4505b057-09dc-4d53-9717-948d1fae9533",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "All important businesses, streets, citizens, leaders, etc.",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@City@",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "dc71a8d9-419a-4129-b0cb-61215cb43a2b",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "All important businesses, streets, citizens, leaders, etc.",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@City@; Lived there",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "iq",
+													"modifier": -4
+												},
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "dd34db4b-a91f-473c-88cc-eb3a1e3bacc2",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "Location of its major cities and important sites; awareness of its major customs, ethnic groups, and languages (but not necessarily expertise); names of folk of Status 6+; and a general understanding of the economic and political situation",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@Large Nation@",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "1432a6c1-fe36-4a6c-94bc-42c8e589a380",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "Location of its major cities and important sites; awareness of its major customs, ethnic groups, and languages (but not necessarily expertise); names of folk of Status 6+; and a general understanding of the economic and political situation",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@Large Nation@; Lived there",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "iq",
+													"modifier": -4
+												},
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "4856a224-73dd-4ec5-895e-6517f8c711a1",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "The inhabitants, trails, streams, hiding places, ambush sites, flora, and fauna of a few hundred acres",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@Rural Area@",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "59a6a93c-89bf-4545-8756-38e62f6cec56",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "The inhabitants, trails, streams, hiding places, ambush sites, flora, and fauna of a few hundred acres",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@Rural Area@; Lived there",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "iq",
+													"modifier": -4
+												},
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "e456cb93-9bb1-4f79-8473-ae0c002fc3a8",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "The residents and buildings of a few city blocks",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@Urban Neighborhood@",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "3df910b1-dae0-4885-be10-633a91028536",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "The residents and buildings of a few city blocks",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@Urban Neighborhood@; Lived there",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "iq",
+													"modifier": -4
+												},
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "80dcc28a-9217-4128-84b8-2b413f435f83",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "All important citizens and businesses, and most unimportant ones; all public buildings and most houses",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@Village or Town@",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										},
+										{
+											"id": "99c3879c-c709-4289-812c-1792d70c87e6",
+											"type": "skill",
+											"name": "Area Knowledge",
+											"reference": "B176",
+											"notes": "All important citizens and businesses, and most unimportant ones; all public buildings and most houses",
+											"tags": [
+												"Everyman",
+												"Knowledge"
+											],
+											"specialization": "@Village or Town@; Lived there",
+											"difficulty": "iq/e",
+											"points": 1,
+											"defaults": [
+												{
+													"type": "iq",
+													"modifier": -4
+												},
+												{
+													"type": "skill",
+													"name": "Geography",
+													"specialization": "@Specialty@",
+													"modifier": -3
+												}
+											],
+											"calc": {}
+										}
+									],
+									"name": "Area Knowledge",
+									"calc": {}
+								},
+								{
+									"id": "1ee2b380-aa1f-4ca9-bd23-c2b84df704b9",
+									"type": "skill",
+									"name": "Fast-Talk",
+									"reference": "B195",
+									"tags": [
+										"Criminal",
+										"Social",
+										"Spy",
+										"Street"
+									],
+									"difficulty": "iq/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Acting",
+											"modifier": -5
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "7460f8e0-3491-40c0-8652-907f16a50056",
+									"type": "skill",
+									"name": "Heraldry",
+									"reference": "B199",
+									"tags": [
+										"Knowledge",
+										"Social"
+									],
+									"difficulty": "iq/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Savoir-Faire",
+											"specialization": "High Society",
+											"modifier": -3
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "272d089f-75ad-4cfc-af81-92fbf0f6f6a4",
+									"type": "skill",
+									"name": "Hiking",
+									"reference": "B200",
+									"tags": [
+										"Athletic",
+										"Exploration",
+										"Outdoor"
+									],
+									"difficulty": "ht/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "ht",
+											"modifier": -5
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "f9f642f3-db3c-445d-88e7-a594f91a3722",
+									"type": "skill",
+									"name": "Riding",
+									"reference": "B217",
+									"tags": [
+										"Animal"
+									],
+									"specialization": "@Specialty@",
+									"difficulty": "dx/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Animal Handling",
+											"specialization": "@Specialty@",
+											"modifier": -3
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "4004bc5c-5a16-4e54-8f88-44e5b1498bb5",
+									"type": "skill",
+									"name": "Teamster",
+									"reference": "B225",
+									"tags": [
+										"Animal",
+										"Vehicle"
+									],
+									"specialization": "@Specialty@",
+									"difficulty": "iq/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Animal Handling",
+											"specialization": "@Specialty@",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Riding",
+											"specialization": "@Specialty@",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Teamster",
+											"modifier": -3
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "19ca2b6c-7681-4689-b817-7f96c9c95cc3",
+									"type": "skill",
+									"name": "Flail",
+									"reference": "B208",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/h",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -6
+										},
+										{
+											"type": "skill",
+											"name": "Axe/Mace",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Two-Handed Flail",
+											"modifier": -3
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "a6862a3c-dd0f-4c94-a72f-648d4bbfef2b",
+									"type": "skill",
+									"name": "Knife",
+									"reference": "B208",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/e",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Force Sword",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Main-Gauche",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Shortsword",
+											"modifier": -3
+										},
+										{
+											"type": "dx",
+											"modifier": -4
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "aa4dd2cd-bb5c-467a-b341-40bded9fa0d1",
+									"type": "skill",
+									"name": "Kusari",
+									"reference": "B209",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/h",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -6
+										},
+										{
+											"type": "skill",
+											"name": "Force Whip",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Monowire Whip",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Whip",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Two-Handed Flail",
+											"modifier": -4
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "54f7fd85-43a0-456e-bf96-b7a9e75a5a86",
+									"type": "skill",
+									"name": "Lance",
+									"reference": "B204",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Spear",
+											"modifier": -3
+										}
+									],
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "skill_prereq",
+												"has": true,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "riding"
+												}
+											}
+										]
+									},
+									"calc": {}
+								},
+								{
+									"id": "0b192237-9102-424c-93eb-72daf6a1aed2",
+									"type": "skill",
+									"name": "Main-Gauche",
+									"reference": "B208,MA58",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Jitte/Sai",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Knife",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Rapier",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Saber",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Smallsword",
+											"modifier": -3
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "56cded26-0de8-4715-ba03-6babbdb2750b",
+									"type": "skill",
+									"name": "Polearm",
+									"reference": "B208",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Spear",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Staff",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Two-Handed Axe/Mace",
+											"modifier": -4
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "6a84ac0b-b826-47c5-a56e-116c072aa925",
+									"type": "skill",
+									"name": "Rapier",
+									"reference": "B208",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Broadsword",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Main-Gauche",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Saber",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Smallsword",
+											"modifier": -3
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "c5375c0d-c6ab-4180-bf4c-c24cc3e8d91b",
+									"type": "skill",
+									"name": "Saber",
+									"reference": "B208",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Broadsword",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Shortsword",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Main-Gauche",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Rapier",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Smallsword",
+											"modifier": -3
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "266d3023-2747-409d-8029-003720959170",
+									"type": "skill",
+									"name": "Shield",
+									"reference": "B220",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"specialization": "Buckler",
+									"difficulty": "dx/e",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Shield",
+											"specialization": "Force",
+											"modifier": -2
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "bdeee6d9-d466-48b5-849b-edfacbcf92e5",
+									"type": "skill",
+									"name": "Shield",
+									"reference": "B220",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"specialization": "Shield",
+									"difficulty": "dx/e",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "a5f63541-b275-47cd-8310-6e80981f47ca",
+									"type": "skill",
+									"name": "Shortsword",
+									"reference": "B209",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Broadsword",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Force Sword",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Jitte/Sai",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Knife",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Saber",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Smallsword",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Tonfa",
+											"modifier": -3
+										},
+										{
+											"type": "dx",
+											"modifier": -5
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "9227177f-a345-467e-9e53-f63e13c900c6",
+									"type": "skill",
+									"name": "Smallsword",
+									"reference": "B208",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Shortsword",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Main-Gauche",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Rapier",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Saber",
+											"modifier": -3
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "a0207351-1c4b-4530-bf16-255140950ef4",
+									"type": "skill",
+									"name": "Spear",
+									"reference": "B208",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Polearm",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Staff",
+											"modifier": -2
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "43e54edf-d43c-48c7-8939-67bd6b96b8fe",
+									"type": "skill",
+									"name": "Staff",
+									"reference": "B208",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Polearm",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Spear",
+											"modifier": -2
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "8535239f-0ff8-4a53-9553-b8601eb01cda",
+									"type": "skill",
+									"name": "Two-Handed Axe/Mace",
+									"reference": "B208",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Axe/Mace",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Polearm",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Two-Handed Flail",
+											"modifier": -4
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "70da7f09-8829-493c-8111-e79d2cdaec25",
+									"type": "skill",
+									"name": "Two-Handed Flail",
+									"reference": "B208",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/h",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -6
+										},
+										{
+											"type": "skill",
+											"name": "Flail",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Kusari",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Two-Handed Axe/Mace",
+											"modifier": -4
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "7aa5a1d3-4c56-49be-b82c-1330138a5eac",
+									"type": "skill",
+									"name": "Two-Handed Sword",
+									"reference": "B209",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Broadsword",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Force Sword",
+											"modifier": -4
+										},
+										{
+											"type": "dx",
+											"modifier": -5
+										}
+									],
+									"calc": {}
+								},
+								{
+									"id": "f4fc28e6-8a03-49b4-a32a-320b42a6236b",
+									"type": "skill",
+									"name": "Whip",
+									"reference": "B209",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Force Whip",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Kusari",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Monowire Whip",
+											"modifier": -3
+										}
+									],
+									"calc": {}
+								}
+							],
+							"name": "3 Points in:",
+							"calc": {}
+						}
+					],
+					"name": "Background Skills",
+					"calc": {}
+				}
+			],
+			"name": "Armorer",
+			"calc": {}
+		}
+	]
+}
